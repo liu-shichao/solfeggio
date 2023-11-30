@@ -7,8 +7,9 @@
     <script src="jquery-1.8.3.js"></script>
     <style>
         p {
-            font-size: 30px;
+            font-size: 50px;
             color: gray;
+            word-wrap: break-word;
         }
 
         body {
@@ -28,6 +29,16 @@
             padding-left: 30px;
         }
     </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?a8d73d123a35643e99f797c643931a33";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -55,7 +66,7 @@
     <p id="group3">123123123123123123123123123</p>
     <p id="group4">123123123123123123123123123</p>
     <p id="group5">123123123123123123123123123</p>
-    <hr/>
+    <hr />
 </body>
 <script>
     $(function () {
@@ -121,35 +132,30 @@
             for (var i = 0; i < sz; i++) {
                 var r = Math.floor(Math.random() * 10) % n;
                 str += group1[r];
-                str += " "
             }
             $("#group1").html(str);
             str = "";
             for (var i = 0; i < sz; i++) {
                 var r = Math.floor(Math.random() * 10) % n;
                 str += group2[r];
-                str += " "
             }
             $("#group2").html(str);
             str = "";
             for (var i = 0; i < sz; i++) {
                 var r = Math.floor(Math.random() * 10) % n;
                 str += group3[r];
-                str += " "
             }
             $("#group3").html(str);
             str = "";
             for (var i = 0; i < sz; i++) {
                 var r = Math.floor(Math.random() * 10) % n;
                 str += group4[r];
-                str += " "
             }
             $("#group4").html(str);
             str = "";
             for (var i = 0; i < sz; i++) {
                 var r = Math.floor(Math.random() * 10) % n;
                 str += group5[r];
-                str += " "
             }
             $("#group5").html(str);
         })
